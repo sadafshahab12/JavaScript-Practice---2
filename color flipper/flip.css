@@ -1,0 +1,54 @@
+body {
+  transition: background-color 0.5s ease;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.flip-button,
+.copy-button {
+  background: #000;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 10px;
+  border: none;
+  outline: none;
+}
+.flip-button:hover,
+.copy-button:hover {
+  background-color: #4a4848;
+}
+.flip-button:active {
+  background-color: #d71e1e;
+}
+.copy-button:active {
+  background-color: #2e7be7;
+}
+.color-list {
+  background-color: rgb(25, 25, 25);
+  padding: 10px 10px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-radius: 6px;
+  box-shadow: 1.5px 1.5px 2px rgb(250, 215, 150);
+}
+.color-list li {
+  list-style: none;
+  box-shadow: 1.5px 1.5px 2px wheat;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: center;
+}
+.color-list li button{
+  border-radius: 5px;
+  cursor: pointer;
+}
